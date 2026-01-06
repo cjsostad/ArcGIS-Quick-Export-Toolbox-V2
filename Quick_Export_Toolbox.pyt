@@ -10,14 +10,10 @@
 # Ministry, Division, Branch: WLRS, Fish and WIldlife Authorizations
 # Created Date: February 21st, 2024
 # Updated By: Marina Cunningham
-# Updated Date: September 09, 2024
-# Description:
-#     THIS IS A DEMO SCRIPT INTENDED TO DEMONSTRATE GIS PANTRY STANDARDS. There 
-#     are many ways to be in compliance with standards, your code need not look 
-#     exactly the same.
+# Updated Date: September 09, 2025
 
-# --------------------------------------------------------------------------------
-# * SUMMARY
+# Description:
+ 
 '''
 This ArcGIS Pro Python Toolbox provides three tools for quickly exporting map layouts to PDF or JPEG formats:
 
