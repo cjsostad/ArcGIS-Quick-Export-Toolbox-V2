@@ -2,7 +2,7 @@
 # chris.sostad@gov.bc.ca
 # Ministry of WLRS
 # Created Date: February 21st, 2024
-# Updated Date: September 09, 2024
+# Updated Date: September 09, 2025
 
 
 
@@ -38,7 +38,9 @@ All tools support High/Medium/Low resolution presets, automatic file extension h
 # * IMPROVEMENTS
 # Stability of exporting multiple layouts to a single PDF could be improved.
 # Move the field for searching for a directory to the bottom portion of each tool so they are more similar
+#
 # * Suggestions...
+# Change the ordering of the fields
 # --------------------------------------------------------------------------------
 
 import arcpy
