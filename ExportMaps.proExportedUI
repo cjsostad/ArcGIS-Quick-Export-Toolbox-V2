@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ArcGIS.Desktop xmlns="http://schemas.esri.com/DADF/Registry">
+  <QAT>esri_core_newProjectButton;esri_core_openProjectButton;esri_core_saveProjectButton;esri_core_undoSplitButton;esri_core_redoSplitButton;</QAT>
+  <QAT>esri_core_newProjectButton;esri_core_openProjectButton;esri_core_saveProjectButton;esri_core_undoSplitButton;esri_core_redoSplitButton;</QAT>
+  <QAT>esri_core_newProjectButton;esri_core_openProjectButton;esri_core_saveProjectButton;esri_core_undoSplitButton;esri_core_redoSplitButton;</QAT>
+  <QAT>esri_core_newProjectButton;esri_core_openProjectButton;esri_core_saveProjectButton;esri_core_undoSplitButton;esri_core_redoSplitButton;</QAT>
+  <QAT>esri_core_newProjectButton;esri_core_openProjectButton;esri_core_saveProjectButton;esri_core_undoSplitButton;esri_core_redoSplitButton;</QAT>
+  <QAT>esri_core_newProjectButton;esri_core_openProjectButton;esri_core_saveProjectButton;esri_core_undoSplitButton;esri_core_redoSplitButton;</QAT>
+  <QAT>esri_core_newProjectButton;esri_core_openProjectButton;esri_core_saveProjectButton;esri_core_undoSplitButton;esri_core_redoSplitButton;</QAT>
+  <modules>
+    <insertModule id="Custom">
+      <tabs>
+        <tab id="esriTabf8431b0caf87c63e" caption="Export Maps" isVisible="true">
+          <group refID="esriGroupaaeeee365dbf2f75" />
+        </tab>
+      </tabs>
+      <groups>
+        <group id="esriGroupaaeeee365dbf2f75" caption="Quick Map Exports">
+          <button refID="esri_geoprocessing__ExportSingleLayout" size="large" />
+          <button refID="esri_geoprocessing__FromMultipleExportSingleLayout" size="large" />
+          <button refID="esri_geoprocessing__ExportMultipleLayoutsToSingleFile" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <button id="esri_geoprocessing_DeleteAstFilesArcPRO_DeleteASTFiles" caption="Delete AST Files (ArcPRO)" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GeoprocessingScript16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GeoprocessingScript32.png" isCustomCommand="true" assembly="" className="esri_geoprocessing_module:Commands.ExecuteGPToolButton" extendedCaption="DeleteAstFilesArcPRO">
+          <args>
+            <params toolPath="P:\corp\script_whse\python\Utility_Misc\Ready\statusing_tools_arcpro\Delete AST Files ArcPRO.tbx\DeleteASTFiles" name="Delete AST Files (ArcPRO)" xmlns="" />
+          </args>
+          <tooltip heading="Delete AST Files (ArcPRO)"></tooltip>
+        </button>
+        <button id="esri_geoprocessing_StatusingToolsArcPRO_MakeAutomatedStatusSpreadsheet" caption="Automated Status Tool (ArcPRO)" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GeoprocessingScript16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GeoprocessingScript32.png" isCustomCommand="true" assembly="" className="esri_geoprocessing_module:Commands.ExecuteGPToolButton" extendedCaption="StatusingToolsArcPRO">
+          <args>
+            <params toolPath="P:\corp\script_whse\python\Utility_Misc\Ready\statusing_tools_arcpro\Statusing Tools ArcPRO.tbx\MakeAutomatedStatusSpreadsheet" name="Automated Status Tool (ArcPRO)" xmlns="" />
+          </args>
+          <tooltip heading="Automated Status Tool (ArcPRO)">Creates a multi tab spreadsheet.  Tab 1  is created for the tool, Tab 2 is created using values from the CSV files that were created by the ILRR, Tab 3 is created by the Universal_Overlap_Tool</tooltip>
+        </button>
+        <button id="esri_geoprocessing_StatusingToolsArcPRO_UniversalOverlapToolArcPro" caption="Universal Overlap Tool (ArcPRO)" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GeoprocessingScript16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GeoprocessingScript32.png" isCustomCommand="true" assembly="" className="esri_geoprocessing_module:Commands.ExecuteGPToolButton" extendedCaption="StatusingToolsArcPRO">
+          <args>
+            <params toolPath="P:\corp\script_whse\python\Utility_Misc\Ready\statusing_tools_arcpro\Statusing Tools ArcPRO.tbx\UniversalOverlapToolArcPro" name="Universal Overlap Tool (ArcPRO)" xmlns="" />
+          </args>
+          <tooltip heading="Universal Overlap Tool (ArcPRO)">This tool does an overlay of a feature class with other featureclasses that have been setup in an excel spreadsheet.  The output is an xls file that will be stored in the same directory as the input featureclass.</tooltip>
+        </button>
+        <button id="esri_geoprocessing_StatusingToolsArcPRO_DeleteASTFiles" caption="Delete AST Files" smallImage="GeoprocessingScript16" largeImage="GeoprocessingScript32" isCustomCommand="true" assembly="" className="esri_geoprocessing_module:Commands.ExecuteGPToolButton" extendedCaption="Statusing Tools ArcPRO">
+          <args>
+            <params toolPath="P:\corp\script_whse\python\Utility_Misc\Ready\statusing_tools_arcpro\Statusing Tools ArcPRO.tbx\DeleteASTFiles" name="Delete AST Files" xmlns="" />
+          </args>
+          <tooltip heading="Delete AST Files">Delete the intermediate files used by and created by the Automated Status Tool.</tooltip>
+        </button>
+        <button id="esri_geoprocessing_Defaultatbx_LandsAuthTool" caption="LDS Generation v1" smallImage="GeoprocessingScript16" largeImage="GeoprocessingScript32" isCustomCommand="true" assembly="" className="esri_geoprocessing_module:Commands.ExecuteGPToolButton" extendedCaption="Default">
+          <args>
+            <params toolPath="P:\corp\script_whse\python\Utility_Misc\Ready\lds_generation\lds_generation.atbx\LandsAuthTool" name="LDS Generation v1" xmlns="" />
+          </args>
+          <tooltip heading="LDS Generation v1"></tooltip>
+        </button>
+        <button id="esri_geoprocessing_waterplattool_WaterMapGeneration" caption="Water Map Generation" smallImage="GeoprocessingScript16" largeImage="GeoprocessingScript32" isCustomCommand="true" assembly="" className="esri_geoprocessing_module:Commands.ExecuteGPToolButton" extendedCaption="water_plat_tool">
+          <args>
+            <params toolPath="\\giswhse.env.gov.bc.ca\whse_np\corp\script_whse\python\Utility_Misc\Ready\water_plat_generation\water_plat_tool.atbx\WaterMapGeneration" name="Water Map Generation" xmlns="" />
+          </args>
+          <tooltip heading="Water Map Generation"></tooltip>
+        </button>
+        <button id="esri_geoprocessing__ExportSingleLayout" caption="Export Layout From Project With Only One Layout" smallImage="GeoprocessingScript16" largeImage="GeoprocessingScript32" isCustomCommand="true" assembly="" className="esri_geoprocessing_module:Commands.ExecuteGPToolButton" extendedCaption="Toolbox">
+          <args>
+            <params toolPath="\\giswhse.env.gov.bc.ca\whse_np\corp\cartographic_resources\resources\tools\Quick_Export_Toolbox.pyt\ExportSingleLayout" name="Export Layout From Project With Only One Layout" xmlns="" />
+          </args>
+          <tooltip heading="Export Layout From Project With Only One Layout">Export a selected layout from your project to a PDF or JPEG.</tooltip>
+        </button>
+        <button id="esri_geoprocessing__ExportMultipleLayoutsToSingleFile" caption="Export Multiple Layouts to Single File" smallImage="GeoprocessingScript16" largeImage="GeoprocessingScript32" isCustomCommand="true" assembly="" className="esri_geoprocessing_module:Commands.ExecuteGPToolButton" extendedCaption="Toolbox">
+          <args>
+            <params toolPath="\\giswhse.env.gov.bc.ca\whse_np\corp\cartographic_resources\resources\tools\Quick_Export_Toolbox.pyt\ExportMultipleLayoutsToSingleFile" name="Export Multiple Layouts to Single File" xmlns="" />
+          </args>
+          <tooltip heading="Export Multiple Layouts to Single File">Export multiple layouts into a single PDF or a folder of JPEGs.</tooltip>
+        </button>
+        <button id="esri_geoprocessing__FromMultipleExportSingleLayout" caption="From Multiple Layouts Export Single Layout" smallImage="GeoprocessingScript16" largeImage="GeoprocessingScript32" isCustomCommand="true" assembly="" className="esri_geoprocessing_module:Commands.ExecuteGPToolButton" extendedCaption="Toolbox">
+          <args>
+            <params toolPath="\\giswhse.env.gov.bc.ca\whse_np\corp\cartographic_resources\resources\tools\Quick_Export_Toolbox.pyt\FromMultipleExportSingleLayout" name="From Multiple Layouts Export Single Layout" xmlns="" />
+          </args>
+          <tooltip heading="From Multiple Layouts Export Single Layout">Choose from multiple layouts and export a selected layout to PDF or JPEG.</tooltip>
+        </button>
+        <button id="esri_geoprocessing_LDStool_PNGTenureReport" caption="PNG Tenure Overlap Reporting" smallImage="GeoprocessingScript16" largeImage="GeoprocessingScript32" isCustomCommand="true" assembly="" className="esri_geoprocessing_module:Commands.ExecuteGPToolButton" extendedCaption="Authorization Tools">
+          <args>
+            <params toolPath="W:\srm\gss\resources\tools\authorizations\land_water\Authorization Tools.atbx\PNGTenureReport" name="PNG Tenure Overlap Reporting" xmlns="" />
+          </args>
+          <tooltip heading="PNG Tenure Overlap Reporting"></tooltip>
+        </button>
+        <button id="esri_geoprocessing_LDStool_LandsAuthToolBatch" caption="LDS Generation v1 - Batch" smallImage="GeoprocessingScript16" largeImage="GeoprocessingScript32" isCustomCommand="true" assembly="" className="esri_geoprocessing_module:Commands.ExecuteGPToolButton" extendedCaption="Authorization Tools">
+          <args>
+            <params toolPath="W:\srm\gss\resources\tools\authorizations\land_water\Authorization Tools.atbx\LandsAuthToolBatch" name="LDS Generation v1 - Batch" xmlns="" />
+          </args>
+          <tooltip heading="LDS Generation v1 - Batch"></tooltip>
+        </button>
+      </controls>
+    </insertModule>
+    <updateModule refID="Custom">
+      <controls>
+        <updateButton refID="esri_geoprocessing__ExportSingleLayout" caption="Export Single Layout" />
+      </controls>
+    </updateModule>
+  </modules>
+</ArcGIS.Desktop>

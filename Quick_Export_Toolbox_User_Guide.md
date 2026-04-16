@@ -15,7 +15,7 @@ The Quick Export Toolbox is a set of three tools that let you quickly export you
 1. Open your ArcGIS Pro project.
 2. In the **Catalog** pane, right-click on **Toolboxes**.
 3. Click **Add Toolbox**.
-4. Browse to `\\giswhse.env.gov.bc.ca\whse_np\corp\cartographic_resources\resources\tools\Quick_Export_Toolbox.pyt` and select it.
+4. Browse to the folder where `Quick_Export_Toolbox.pyt` is stored and select it.
 5. Click **OK**. The toolbox will now appear under **Toolboxes** in your Catalog pane.
 
 ---
@@ -40,7 +40,7 @@ Use this tool when your project contains a single layout. It will automatically 
 
 | Parameter | Description |
 |---|---|
-| **Navigate to the folder where you want to save your file** | Click the folder icon to browse to the folder where the exported file will be saved. **Warning:** If a file with the same name already exists in that folder, it will be overwritten without asking. |
+| **Navigate to the folder where you want to save your file** | Defaults to your current project folder. You can browse to a different folder if needed. **Warning:** If a file with the same name already exists in that folder, it will be overwritten without asking. |
 | **File name you want for your output** | Type the name you want for your exported file. The tool auto-fills this with your layout name by default. The correct file extension (`.pdf` or `.jpg`) will be added automatically if you don't include it. |
 | **Select vector resolution** | Choose the image quality of your export: |
 | | • **High (600 DPI)** — Best quality; larger file size. Good for high-quality print and publication. |
@@ -54,7 +54,7 @@ Use this tool when your project contains a single layout. It will automatically 
 ### Steps
 
 1. Double-click the tool to open it.
-2. Browse to your desired output folder.
+2. (Optional) Browse to a different output folder if you don't want to use the project folder.
 3. Enter or confirm the output file name.
 4. Select your preferred resolution and format.
 5. Check or uncheck the georeferencing option.
@@ -71,8 +71,8 @@ Use this tool when your project contains more than one layout and you want to ex
 | Parameter | Description |
 |---|---|
 | **Select a layout from a list of layouts** | A dropdown list showing all the layouts in your current project. Click the dropdown and select the layout you want to export. |
-| **File name you want for your output** | Type the name you want for the exported file. Defaults to `ChangeMe.pdf` — be sure to replace this with a meaningful name. The correct file extension will be added automatically if you don't include it. |
-| **Navigate to the folder where you want to save your file** | Click the folder icon to browse to the folder where the exported file will be saved. **Warning:** If a file with the same name already exists, it will be overwritten. |
+| **File name you want for your output** | Automatically populates with the selected layout name and correct file extension. You can edit this if you want a different name. |
+| **Navigate to the folder where you want to save your file** | Defaults to your current project folder. You can browse to a different folder if needed. **Warning:** If a file with the same name already exists, it will be overwritten. |
 | **Select vector resolution** | Choose the image quality: **High (600 DPI)**, **Medium (300 DPI)**, or **Low (150 DPI)**. See descriptions in Tool 1 above. |
 | **Select export format** | Choose **PDF** or **JPEG**. |
 | **Include Georeferencing Information** | When checked (the default), the exported PDF will include georeferencing information. |
@@ -80,9 +80,9 @@ Use this tool when your project contains more than one layout and you want to ex
 ### Steps
 
 1. Double-click the tool to open it.
-2. Select the layout you want to export from the dropdown.
-3. Change the PDF file name to something meaningful.
-4. Browse to your desired output folder.
+2. Select the layout you want to export from the dropdown. The file name will automatically populate with the layout name.
+3. (Optional) Edit the file name if you want a different name.
+4. (Optional) Browse to a different output folder if you don't want to use the project folder.
 5. Select your preferred resolution and format.
 6. Check or uncheck the georeferencing option.
 7. Click **Run**.
@@ -108,7 +108,7 @@ Use this tool when you want to export two or more layouts to a single PDF that c
 | | • **JPEG** — Each layout is saved as a separate `.jpg` file inside a folder. |
 | **Output file name** | If exporting to PDF, this is the file name for the combined PDF (e.g., `AllMaps`). If exporting to JPEG, this is the name of the folder that will be created to hold the individual JPEG files. The `.pdf` extension is added automatically for PDF exports. |
 | **Select resolution** | Choose the image quality: **High (600 DPI)**, **Medium (300 DPI)**, or **Low (150 DPI)**. |
-| **Output folder** | Browse to the folder where the PDF file or JPEG folder will be saved. |
+| **Output folder** | Defaults to your current project folder. You can browse to a different folder if needed. |
 | **Include Georeferencing Information** | Check to include georeferencing information. |
 
 ### Steps
@@ -118,7 +118,7 @@ Use this tool when you want to export two or more layouts to a single PDF that c
 3. Choose your export format (PDF or JPEG).
 4. Enter an output file or folder name.
 5. Select your preferred resolution.
-6. Browse to the output folder location.
+6. (Optional) Browse to a different output folder if you don't want to use the project folder.
 7. Check or uncheck the georeferencing option.
 8. Click **Run**.
 
